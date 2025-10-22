@@ -235,10 +235,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
     <script>
-        // ========================================
-        // EMAILJS CONFIGURATION - REPLACE THESE!
-        // ========================================
-        
+
         const EMAILJS_CONFIG = {
             publicKey: 'REPLACE_WITH_YOUR_PUBLIC_KEY',      // From: Account → Public Key
             serviceId: 'REPLACE_WITH_YOUR_SERVICE_ID',      // From: Email Services → Your Gmail
@@ -248,20 +245,8 @@
         // Initialize EmailJS
         emailjs.init(EMAILJS_CONFIG.publicKey);
 
-        // Check if configuration is done
-        if (EMAILJS_CONFIG.publicKey.includes('REPLACE_WITH_YOUR')) {
-            console.warn('⚠️ EmailJS is not configured! Please update the EMAILJS_CONFIG object.');
-        } else {
-            // Hide setup warning if configured
-            document.getElementById('setupWarning').style.display = 'none';
-        }
-
-        // ========================================
-        // WORD VALIDATION
-        // ========================================
-        
         const correctAnswers = {
-            word1: 'FIPU',
+            word1: 'fipu',
             word2: 'ideje',
             word3: 'karijere'
         };
